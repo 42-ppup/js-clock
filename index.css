@@ -1,0 +1,138 @@
+body {
+    background-color: #172A3A;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.bgImage {
+    position : absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    animation: fadeIn .5s linear; 
+}
+
+.bgImageCover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0000001c;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.main {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin: -141.15px;
+    text-align: center;
+    width: 283px;
+}
+
+.clock {
+    font-size: 35px;
+    color : white;
+    text-shadow: 4px 2px 2px gray;
+    line-height: 0.2;
+    letter-spacing: 0.008em;
+    font-weight: 300;
+    font-style: normal;
+}
+
+input {
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #fff;
+    font-size: 1.4rem;
+    color: #fff;
+    background: none;
+}
+
+.greeting {
+    font-size: 26px;
+    line-height: 0.6;
+    font-style: italic;
+    color : #fff;
+    text-shadow: 4px 2px 2px gray;
+}
+
+.toDoList {
+    list-style: none;
+    text-align: left;
+    color: white;
+    background-color: #5353539e;
+}
+
+.weather {
+    text-align: right;
+    color: #fff;
+    text-shadow: 4px 2px 5px gray;
+    font-weight: 900;
+}
+
+.close {
+    margin-left: 10px;
+    height: 32px;
+    opacity: 0.3;
+}
+
+.close:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.close:before, .close:after {
+    position: absolute;
+    left: 25px;
+    content: ' ';
+    height: 20px;
+    width: 4px;
+    background-color: #fff;
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
+}
+
+li > span {
+    display: inline-block;
+    width: 230px;
+}
+
+li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    word-break:break-word
+}
+  
+.right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    text-shadow: 4px 2px 2px gray;
+}

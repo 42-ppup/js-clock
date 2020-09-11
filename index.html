@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Something</title>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+    <div class="main">
+        <div class="js-clock clock">
+            <h1>00:00:00</h1>
+        </div>
+        <form class="js-form hidden">
+            <input type="text" placeholder="What's your name?" />
+        </form>
+        <h4 class="js-greeting hidden greeting"></h4>
+        <form class="js-toDoForm">
+            <input type="text" placeholder="Write a to do"/>
+        </form>
+        <ul class="js-toDoList toDoList">
+        </ul>
+    </div>
+    <div class="weather">
+        <span class="js-weather"></span>
+    </div>
+    <div class="right">
+        <h2 class="js-countDown hidden">퇴근 00:00:00 전</h2>
+    </div>
+    <div class="bgImageCover"></div>
+    <script src="clock.js"></script>
+    <script src="greeting.js"></script>
+    <script src="todo.js"></script>
+    <script src="background.js"></script>
+    <script src="weather.js"></script>
+</body>
+</html>
